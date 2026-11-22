@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "families": {
+    "D": { "mode": "directory", "dir": "decisions/d", "index": "decisions/DECISIONS.md" },
+    "B": { "mode": "directory", "dir": "blockers/b", "index": "BLOCKERS.md", "archiveIndex": "blockers/RESOLVED.md" },
+    "I": { "mode": "file" }
+  },
+  "thresholds": {}
+}

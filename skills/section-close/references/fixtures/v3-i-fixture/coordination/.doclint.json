@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "families": {
+    "D": { "mode": "directory", "dir": "decisions/d", "index": "decisions/DECISIONS.md" },
+    "B": { "mode": "file" },
+    "I": { "mode": "directory", "dir": "improvements/i", "index": "improvements/IMPROVEMENTS.md" }
+  },
+  "thresholds": {}
+}

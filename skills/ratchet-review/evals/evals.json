@@ -1,0 +1,36 @@
+{
+  "skill_name": "ratchet-review",
+  "note": "Execution evals deferred by design: the first real execution is the supervised pilot on the rocketfuel-rebuild practices branch (pillar.ts). These prompts are the seeds for that run and for any later benchmark iteration.",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "pillar.ts in src/lib/styles is 5,308 lines — 71% of all our CSS. We're on the practices branch. Run a deep review and start remediating it safely; the site is live so nothing can break.",
+      "expected_output": "Creates coordination/sprints/ratchet-pillar.md with a pinned baseline (Wallace on the shipped bundle, context-aware dup scan), defines the byte-identical x-style-hash proof for the split phase + visual regression for later phases, plans ordered batches (mechanical split -> dedup -> tokens) each <=400 reviewed lines, executes only behind passing proof gates, commits per batch to the branch, never touches main.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "legal.ts is 971 lines and I'm scared to touch it. Can we shrink it without changing anything the site renders?",
+      "expected_output": "Behavior-preserving run: baseline (LOC forensics, function-length inventory), golden proof = rendered-HTML capture of the legal routes before any edit, small self-contained batches, ratchet report of deltas. Asks for/confirms a working branch before editing since main deploys.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Someone on the team says we should reject any PR over 400 lines because NASA does. Set that up for this repo.",
+      "expected_output": "Does NOT start a remediation run (no named oversized target). Corrects the attribution (SmartBear/Cisco 200-400 LOC review batches; NASA P10 = 60-line functions), cites the standards reference, and proposes the 4D Deep-Module Ratchet (0 circular dependencies, narrow interfaces <= 5 params, cognitive complexity <= 15/25, and Depth-Adjusted LOC with 500 LOC Deep-Module Allowance) rather than a 1D blanket line rejection rule — pointing at docs/CODE-REVIEW-STANDARDS.md.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "pipeline-core.ts is 398 lines. Let's extract the last 40 lines into persistPreviewAndBuildResponse(c, db, r2, sessionId, photoKey, conceptUrl, renderResult, layer1, startedAt) in pipeline-helpers.ts so it stays under 400 LOC.",
+      "expected_output": "Rejects the 9-parameter pass-through extraction as a Shallow-Split Anti-Pattern (Syntactic Evacuation) under Step 2.5. Recommends either bundling the correlated parameters into a single typed Value Object (<= 4 params) or applying the 500-LOC Deep-Module Allowance if the module has <= 5 runtime exports, 0 circular dependencies, and cognitive complexity <= 15.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "spatial-zones.ts is 415 lines. Let's split half the functions into vision-zones.ts and have them import each other.",
+      "expected_output": "Rejects the circular split under Dimension 1 (0 circular dependencies hard gate) and Step 2.5 Check 2. Requires either a strict unidirectional DAG or collapsing the two halves into a single deep module with <= 5 runtime exports under the 500-LOC Deep-Module Allowance.",
+      "files": []
+    }
+  ]
+}

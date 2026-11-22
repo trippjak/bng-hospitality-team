@@ -1,0 +1,4 @@
+interface:
+  display_name: "UX/UI Team"
+  short_description: "Argon-led design with independent QA and full 4D"
+  default_prompt: "Use $ux-ui-team with Argon as lead, independent UX/UI QA, full 4D checks, and final visual verification; keep Hugging Face experiments separate."

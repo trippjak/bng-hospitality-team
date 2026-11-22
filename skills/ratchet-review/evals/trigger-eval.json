@@ -1,0 +1,20 @@
+[
+  {"query": "deep review pillar.ts — it's 5k+ lines and it's all our CSS, I want it cleaned up but the site is live", "should_trigger": true},
+  {"query": "run the ratchet on src/lib/styles/pillar.ts on the copy-clean branch", "should_trigger": true},
+  {"query": "partners.ts is 843 lines and scares me. remediate it safely please", "should_trigger": true},
+  {"query": "our shipped css bundle has 195 unique colors and duplicate selectors everywhere — dedupe it without breaking prod", "should_trigger": true},
+  {"query": "can we apply those smartbear/nasa review practices to shrinking legal.ts? behavior must not change", "should_trigger": true},
+  {"query": "that LOC audit flagged one giant file. let's spin up the dedicated cleanup run on it we talked about", "should_trigger": true},
+  {"query": "ok the css split is planned, resume the pillar remediation run from the run file", "should_trigger": true},
+  {"query": "i want to consolidate our z-index mess (0,1,2,90,100,1200,9999) into a scale without visual regressions", "should_trigger": true},
+  {"query": "review my last commit before I push", "should_trigger": false},
+  {"query": "section close — we just shipped the pricing page", "should_trigger": false},
+  {"query": "run a team review before we lift noindex on the new site", "should_trigger": false},
+  {"query": "why is this project 24K LOC? is it bloated or is that mostly notes?", "should_trigger": false},
+  {"query": "simplify this function I just wrote in contact.ts, it feels clunky", "should_trigger": false},
+  {"query": "audit the whole repo for security issues", "should_trigger": false},
+  {"query": "is 400 lines too big for a PR? what's the actual research say", "should_trigger": false},
+  {"query": "split this new component file I'm writing into two files real quick", "should_trigger": false},
+  {"query": "the homepage hero animation is janky, make it smoother", "should_trigger": false},
+  {"query": "clean up the coordination docs, HANDOFF is over threshold", "should_trigger": false}
+]

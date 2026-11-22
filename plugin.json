@@ -1,0 +1,6 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "bng-hospitality-team",
+  "version": "2.0.0",
+  "description": "BNG Hospitality project routing, 4D and 5D review, and ontology-grounded teammate workflows."
+}
